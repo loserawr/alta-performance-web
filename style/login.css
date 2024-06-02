@@ -1,0 +1,287 @@
+* {
+    margin: 24px;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+:root {
+    --cor-principal: #f6f6f2;
+    --cor-secundaria: #388087;
+    --cor-destaque: #c2edce;
+    --cor-preto: #192a2e; 
+
+    --fonte-principal: "Playfair Display", Arial, sans-serif;;
+    --fonte-paragrafo: "Nunito", Arial, sans-serif;
+
+    --background-dark: rgb(37, 37, 37);
+    --texto-principal-dark: black;
+
+}
+
+body {
+    font-family: var(--fonte-paragrafo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+}
+
+body.dark-mode header {
+    background-color: #204447;
+}
+
+body.dark-mode a {
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: var(--cor-preto);
+}
+
+form {
+    width: flex;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    background-color: white;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0.3px 0px 0.3px rgb(220, 220, 218);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    padding: 0px;
+    margin: 0;
+    margin-left: 25px;
+}
+
+header ul li + li {
+    margin-left: 24px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#login {
+    position: absolute; 
+    right: 155px; 
+}
+
+#regis {
+    display: inline-block;
+    font-size: 25px;
+    background-color: var(--cor-destaque);
+    border-radius: 30px;
+    padding: 9px;
+    position: absolute;
+    right: 20px; 
+    line-height: 0.7; 
+}
+
+header, #login, #regis {
+    align-items: center;
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-paragrafo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-principal);
+}
+
+body.dark-mode {
+    font-family: var(--fonte-paragrafo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-preto);
+    color: white; /* cor da fonte */
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+
+h2.cadastroH2 {
+    text-align: center;
+    margin-top: 25px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+h2.textFillerH2 {
+    text-align: center;
+    margin-top: 25px;
+    font-family: var(--fonte-principal);
+    
+}
+
+p.semConta {
+    font-family: var(--fonte-paragrafo);
+    font-weight: bold;
+}
+
+a.cadastroDescrição {
+    text-align: center;
+    font-family: var(--fonte-paragrafo);
+    margin-bottom: 5px;
+}
+
+a.loginLink {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+}
+
+section.loginContainer {
+    background-color: white; 
+    padding: 15px; 
+    margin-top: 6rem; 
+    height: auto;
+    max-width: 500px;
+    width: 450px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+form {
+    display: flex; 
+    flex-direction: column;
+     
+}
+
+label {
+    font-weight: normal;
+    font-family: var(--fonte-paragrafo); 
+}
+
+input[type="email"],
+input[type="password"],
+textarea {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid;
+    border-color: rgb(196, 196, 196);
+    box-shadow: none; 
+    border-radius: 8px;
+    flex-wrap: wrap;
+    font-family: var(--fonte-paragrafo);
+}
+
+input#email {
+    margin-top: 25px
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover,
+textarea {
+    border-color: rgb(113, 255, 255);
+}
+
+button {
+    background-color: var(--cor-secundaria); 
+    border: none;  
+    color: white;  
+    padding: 15px 32px;  
+    text-align: center;  
+    text-decoration: none;  
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    width: auto;
+    border-radius: 10px;
+    font-family: var(--fonte-paragrafo);
+}
+
+button.change-theme-button {
+    background-color: var(--cor-destaque);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-right: 30rem;
+}
+
+.textFiller {
+    text-align: center;
+    padding: 10px;
+    margin: 100px;
+    padding-bottom: 33rem;
+}
+
+p.textFillerDesc {
+    text-align: center;
+    font-family: var(--fonte-paragrafo);
+    padding-top: 10px;
+}
+
+.footer {
+    background-color:var(--cor-secundaria);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: var(--fonte-paragrafo);
+    bottom: 0;
+    width: 100%;
+}
+
+  

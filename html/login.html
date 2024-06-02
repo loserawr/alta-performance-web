@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu login</title>
+        <link rel="stylesheet" href="\style\login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                <button class="change-theme-button">
+                    <img src="/assets/icons/dark-theme.svg" alt="Ícone de Modo Escuro" width="20" height="20">
+                </button>
+                </li>
+                <li><a href="/html/pag1.html">Home</a></li>
+                <li><a href="/html/pag-2.html">Galeria</a></li>
+                <li class="register" id="login"><a href="#">Login</a></li>
+                <li class="register" id="regis"><a href="/html/cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="containerGrid">
+    <div class="textFiller">
+        <h2 class="textFillerH2"> Bem-vindo de volta </h2>
+        <p class="textFillerDesc"> Faça seu login </p>
+    </div>
+    <section class="loginContainer">
+          <h2 class="cadastroH2">Login</h2>
+    <a class=cadastroDescrição> Faça seu login </a>
+
+      <form action="" method="">
+
+            <input type="email" id="email" name="email" placeholder="Email">
+
+<!-- dá pra usar JS pra confirmar senha aqui -->
+            <input type="password" id="senha" name="senha" placeholder="Senha">
+
+            <button class=botaoRegistrar type="submit">Entrar</button>
+            <p class="semConta"> Não tem conta? <a href="/html/cadastro.html" class="loginLink"> Cadastre-se </a></p>
+    </form>
+    </section>
+</div>
+
+<!-- rodapé -->
+<footer class="footer">
+    <p> feito com <3 </p>
+  </footer>
+    <script src="\scripts\dark-mode.js">          
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+* {
+    margin: 24;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgb(122, 121, 118);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+
+}
+
+header ul li+li {
+    margin-left: 24px;
+
+}
+
+header a {
+    color: #ebebeb;
+    text-decoration: none;
+    transition: color 0.2s;
+}

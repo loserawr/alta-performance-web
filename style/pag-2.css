@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #f6f6f2;
+    --cor-secundaria: #388087;
+    --cor-destaque: #c2edce;
+    --cor-preto: #192a2e; 
+
+    --fonte-principal: "Playfair Display", Arial, sans-serif;;
+    --fonte-paragrafo: "Nunito", Arial, sans-serif;
+
+    --background-dark: rgb(31, 31, 31);
+    --texto-principal-dark: black;
+
+}
+
+body {
+    background-color: var(--cor-principal);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    font-family: var(--fonte-paragrafo);
+}
+
+body.dark-mode {
+    font-family: var(--fonte-paragrafo);
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color: white; /* cor da fonte */
+}
+body.dark-mode header {
+    background-color: #204447;
+}
+
+body.dark-mode a {
+    color: white;
+}
+
+
+button.change-theme-button {
+    background-color: var(--cor-destaque);
+  }
+
+button {
+    background-color: var(--cor-secundaria); 
+    border: none;  
+    color: white;  
+    padding: 15px 32px;  
+    text-align: center;  
+    text-decoration: none;  
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    width: auto;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    background-color: white;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0.3px 0px 0.3px rgb(220, 220, 218);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    padding: 0px;
+    margin: 0;
+    margin-left: 25px;
+}
+
+header ul li + li {
+    margin-left: 24px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#login {
+    position: absolute; 
+    right: 155px; 
+}
+
+#regis {
+    display: inline-block;
+    font-size: 25px;
+    background-color: var(--cor-destaque);
+    border-radius: 30px;
+    padding: 9px;
+    position: absolute;
+    right: 20px; 
+    line-height: 0.7; 
+}
+
+header, #login, #regis {
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 24px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+}
+
+.flip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.frente, .tras, .frente-kiara, .tras-kiara, .frente-rudá, .tras-rudá, .frente-luffy, .tras-luffy, .frente-pretinha, .tras-pretinha, .frente-claudio, .tras-claudio {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #00000061;
+    backface-visibility: hidden;
+}
+
+.frente {
+    background-image: url(/assets/photos/fred.png);
+    background-size: cover;
+}
+
+.tras {
+    background-color: #777873a5;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.frente-kiara {
+    background-image: url(/assets/photos/kiara.png);
+    background-size: cover;
+}
+
+.tras-kiara {
+    background-color: #777873a5;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.frente-rudá {
+    background-image: url(/assets/photos/ruda.jpeg);
+    background-size: cover;
+}
+
+.tras-rudá {
+    background-color: #777873a5;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.frente-luffy {
+    background-image: url(/assets/photos/luffy.png);
+    background-size: cover;
+}
+
+.tras-luffy {
+    background-color: #777873a5;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.frente-pretinha {
+    background-image: url(/assets/photos/Rectangle\ 9.png);
+    background-size: cover;
+}
+
+.tras-pretinha {
+    background-color: #777873a5;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.frente-claudio {
+    background-image: url(/assets/photos/claudio.png);
+    background-size: cover;
+}
+
+.tras-claudio {
+    background-color: #777873a5;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.card-container:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-top: 25px; 
+    margin-bottom: 15px;
+}

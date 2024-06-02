@@ -1,0 +1,352 @@
+* {
+    margin: 24px;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+:root {
+    --cor-principal: #f6f6f2;
+    --cor-secundaria: #388087;
+    --cor-destaque: #c2edce;
+    --cor-preto: #192a2e; 
+
+    --fonte-principal: "Playfair Display", Arial, sans-serif;;
+    --fonte-paragrafo: "Nunito", Arial, sans-serif;
+
+    --background-dark: rgb(31, 31, 31);
+    --texto-principal-dark: black;
+}
+
+body {
+    font-family: var(--fonte-paragrafo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-principal);
+    transition: background-color 0.5s ease;
+}
+
+
+body.dark-mode {
+    font-family: var(--fonte-paragrafo);
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--background-dark);
+    color: white; /* cor da fonte */
+}
+body.dark-mode section.loginContainer {
+    background-color: var(--cor-secundaria);
+}
+body.dark-mode header {
+    background-color: #204447;
+}
+
+body.dark-mode a {
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: var(--cor-preto);
+}
+
+form {
+    width: flex;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+header ul {
+    list-style: none;
+    display: flex;
+
+}
+
+header ul li+li {
+    /*colocar espaço entre os links */
+    margin-left: 24px;
+
+}
+
+header a {
+    /*texto da header */
+    color: #000000;
+    text-decoration: none;
+    /*tira o traço do link*/
+    transition: color 0.2s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header a :hover {
+    color: #f13239;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+
+h2.cadastroH2 {
+    text-align: center;
+    margin-top: 25px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+h2.textFillerH2 {
+    text-align: center;
+    margin-top: 25px;
+    font-family: var(--fonte-principal);
+    
+}
+
+h3.cadastroInfoUser
+h3.cadastroInfoBichinho {
+    font-family: var(--fonte-paragrafo);
+}
+
+
+.highlight {
+    color: var(--cor-secundaria)
+}
+
+a.cadastroDescrição {
+    text-align: center;
+    font-family: var(--fonte-paragrafo);
+    margin-bottom: 15px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+}
+
+section.loginContainer,
+section.feedback {
+    background-color: white;
+    padding: 15px; 
+    margin-top: 6rem; 
+    height: auto;
+    max-width: 500px;
+    width: 450px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+section.feedbackBlock {
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex; 
+    flex-direction: column;
+     
+}
+
+label {
+    font-weight: normal;
+    font-family: var(--fonte-paragrafo); 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="password"],
+textarea#descricaoBichinho,
+textarea#feedback {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid;
+    border-color: rgb(196, 196, 196);
+    box-shadow: none; 
+    border-radius: 8px;
+    flex-wrap: wrap;
+    font-family: var(--fonte-paragrafo);
+}
+
+input#fotoBichinho.submit-foto {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: var(--fonte-paragrafo);
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.submit-foto:hover {
+    background-color: #6a6a6a;
+    opacity: 0.8;
+}
+
+.submit-foto:active {
+    background-color: var(--cor-principal);
+}
+
+input#nome {
+    margin-top: 5px
+}
+
+
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="file"]:hover,
+input[type="password"]:hover,
+textarea {
+    border-color: rgb(113, 255, 255);
+}
+
+button {
+    background-color: var(--cor-secundaria); 
+    border: none;  
+    color: white;  
+    padding: 15px 32px;  
+    text-align: center;  
+    text-decoration: none;  
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    width: auto;
+    border-radius: 10px;
+    font-family: var(--fonte-paragrafo);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+
+textarea#feedback 
+textarea#descricaoBichinho { 
+    width: auto;
+    height: 100%;
+    width: 100px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;  
+    resize: vertical;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.separardofeedback {
+    padding: 25px;
+}
+
+div.espacinho {
+    padding: 10px;
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-right: 30rem;
+}
+
+.textFiller {
+    text-align: center;
+    padding: 10px;
+    margin: 100px;
+    padding-bottom: 33rem;
+}
+
+p.textFillerDesc {
+    text-align: center;
+    font-family: var(--fonte-paragrafo);
+}
+  
+  button#toggle-mode {
+    width: auto;
+    height: 5px;
+  }
+
+
+  button.change-theme-button {
+    background-color: var(--cor-destaque);
+  }
+
+  button.botaoFeedback {
+    margin-bottom: 150px;
+  }
+  
+  a.loginLink {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: bolder;
+  }
+
+  p.façaLogin {
+    font-family: var(--fonte-paragrafo);
+    font-weight: bold;
+  }
+
+  select#tipoFeedback {
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none; 
+    border-radius: 8px;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    background-color:var(--cor-secundaria);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: var(--fonte-paragrafo);
+    bottom: 0;
+    width: 100%;
+
+}
