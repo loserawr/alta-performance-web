@@ -285,4 +285,67 @@ p.textFillerDesc {
     width: 100%;
 }
 
-  
+/* Media queries para responsividade */
+@media (max-width: 1024px) {
+    header ul {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    #login, #regis {
+        position: static;
+        margin-left: 10px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerGrid {
+        grid-template-columns: 1fr;
+    }
+
+    section.loginContainer {
+        width: 90%;
+        padding: 10px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #login, #regis {
+        margin-left: 0;
+    }
+
+    .textFiller {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    section.loginContainer {
+        padding: 10px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+}  

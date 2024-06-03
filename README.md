@@ -23,8 +23,6 @@
   - HTML e CSS da página de galeria
   - Responsividade do website 
   - Paleta de cores
-- Sofia Lorena de Freitas Pereira - 01623132
-  - HTML e CSS da página de galeria
 - Vladison Lucas Costa Dos Santos - 01657950  
   - Javascript de todo website
   - CSS das páginas com as cores do modo escuro
