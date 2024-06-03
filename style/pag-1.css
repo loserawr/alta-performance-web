@@ -27,16 +27,18 @@ body {
     width: 100%;
     background-attachment: fixed;
     font-family: var(--fonte-paragrafo);
+    background-color: var(--cor-principal);
+    transition: background-color 0.5s ease;
 }
 
 body.dark-mode {
+    background-color: var(--cor-principal);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
     font-family: var(--fonte-paragrafo);
-    background-color:black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:black;
+    background-color:var(--background-dark);
     color: white; /* cor da fonte */
 }
 
@@ -46,6 +48,29 @@ body.dark-mode header {
 
 body.dark-mode a {
     color: white;
+}
+
+body.dark-mode h1 {
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode h3.info {
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode p {
+    color: rgb(0, 0, 0);
+}
+body.dark-mode h3 {
+    color: rgb(0, 0, 0);
+}
+
+body.light-mode {
+    background-color: var(--background-light);
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
 }
 
 header {

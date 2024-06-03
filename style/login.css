@@ -29,6 +29,11 @@ body {
 
 body.dark-mode {
     background-color: var(--background-dark);
+    background-color:var(--background-dark);
+    color: white; /* cor da fonte */
+}
+body.dark-mode section.loginContainer {
+    background-color: var(--cor-secundaria);
 }
 
 body.dark-mode header {
@@ -41,6 +46,14 @@ body.dark-mode a {
 
 body.dark-mode button {
     background-color: var(--cor-preto);
+}
+
+body.light-mode {
+    background-color: var(--background-light);
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
 }
 
 form {
