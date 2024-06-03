@@ -17,6 +17,7 @@
   - HTML e CSS da página inicial
   - HTML e CSS da header do website
   - Garantiu entreterimento pro grupo
+  - FEZ BOTAO 
   - Paleta de cores
 - Maria Karolina Rodrigues De Andrade - 01631286   
   - HTML e CSS da página inicial  
