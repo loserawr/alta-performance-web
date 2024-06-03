@@ -15,9 +15,7 @@
 
     --background-dark: rgb(31, 31, 31);
     --texto-principal-dark: black;
-
 }
-
 body {
     background-color: var(--cor-principal);
     background-size: cover;
