@@ -16,6 +16,10 @@
 
     --background-dark: rgb(31, 31, 31);
     --texto-principal-dark: black;
+   
+
+
+
 }
 
 body {
@@ -53,45 +57,59 @@ body.dark-mode a {
 body.dark-mode button {
     background-color: var(--cor-preto);
 }
+header {
+    display: flex;
+    justify-content: left;
+    height: 65px;
+    background-color: white;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0.3px 0px 0.3px rgb(220, 220, 218);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 0px;
+    margin: 0;
+    margin-left: 720px;
+}
+
+header ul li + li {
+    margin-left: 0px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#login {
+    position: absolute; 
+    right: 155px; 
+}
+
+#regis {
+    display: inline-block;
+    font-size: 25px;
+    background-color: var(--cor-destaque);
+    border-radius: 30px;
+    padding: 9px;
+    position: absolute;
+    right: 20px; 
+    line-height: 0.7; 
+}
+
+header, #login, #regis {
+    align-items: center;
+}
 
 form {
     width: flex;
 }
 
-header {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-
-
-header ul {
-    list-style: none;
-    display: flex;
-
-}
-
-header ul li+li {
-    /*colocar espaço entre os links */
-    margin-left: 24px;
-
-}
-
-header a {
-    /*texto da header */
-    color: #000000;
-    text-decoration: none;
-    /*tira o traço do link*/
-    transition: color 0.2s;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-header a :hover {
-    color: #f13239;
-}
 
 /* Reset básico */
 * {
