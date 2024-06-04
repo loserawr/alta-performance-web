@@ -14,6 +14,7 @@
   - HTML e CSS da página de galeria  
   - Reponsividade do website
   - Javascript dark
+  - Apoio moral
 - Emerson Wallace Barcelos de Araújo - 01609132  
   - HTML e CSS da página inicial
   - HTML e CSS da header do website
