@@ -15,9 +15,7 @@
 
     --background-dark: rgb(31, 31, 31);
     --texto-principal-dark: black;
-
 }
-
 body {
     background-color: var(--cor-principal);
     background-size: cover;
@@ -262,6 +260,12 @@ header, #login, #regis {
     text-align: center;
     margin-top: 25px; 
     margin-bottom: 15px;
+}
+
+h3 {
+    justify-content: center;
+    margin: 15px;
+    font-size: 22px;
 }
 
 .footer {
