@@ -29,5 +29,5 @@
   - Paleta de cores
 - Vladison Lucas Costa Dos Santos - 01657950  
   - Javascript dark/fonte/menu
-  - CSS das páginas com as cores do modo escuro
+  - CSS e HTML das páginas com as cores do modo escuro
   - Responsividade website
